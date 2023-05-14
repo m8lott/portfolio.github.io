@@ -1,7 +1,7 @@
 {
-  "name": "easy-webdev-startpack",
+  "name": "Portfolio",
   "version": "3.1.1",
-  "description": "HTML5+CSS3 template for easy start website project'",
+  "description": "My portfolio",
   "main": "gulpfile.js",
   "scripts": {
     "html": "gulp",

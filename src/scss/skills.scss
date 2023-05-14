@@ -1,0 +1,60 @@
+.skills {
+  // .skills_content
+  &_content {
+
+  }
+  // .skills_content-title
+  &_content-title {
+    font-family: 'Roboto';
+font-weight: 500;
+font-size: 32px;
+line-height: 38px;
+color: #000000;
+  }
+  // .skills_content-skills
+  &_content-skills {
+    padding-top: 20px;
+  }
+  // .skills_content-skills-list
+  &_content-skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  padding-left: 0;
+  }
+  // .skills_content-skills-list-item
+  &_content-skills-list-item {
+    font-family: 'Roboto';
+font-size: 16px;
+line-height: 26px;
+color: #727272;
+list-style-type: none;
+&::before {
+  content: url('../img/Group\ 873.svg');
+  display: inline-block;
+  padding-right: 10px;
+  position: relative;
+  top:3px;
+}
+  }
+  // .skills__wrapper
+  &__wrapper {
+    padding-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  // .skills__pictures
+  &__pictures {
+  }
+  // .skills__img
+  &__img {
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+  }
+  }
+  .container {
+  }
+  

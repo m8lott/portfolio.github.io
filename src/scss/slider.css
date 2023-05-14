@@ -1,0 +1,96 @@
+.slider {
+  padding-top: 150px;
+}
+.slider__main-title {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #000000;
+}
+.slider__wrapper {
+  padding-top: 50px;
+}
+.slider__item-wrapper {
+  width: 100%;
+  height: 540px;
+  background-image: url("../img/site.png");
+  overflow: visible;
+}
+.slider__item-wrapper-2 {
+  width: 100%;
+  height: 540px;
+  background-image: url("../img/calculator.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slider__item-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.slider__item-link {
+  color: white;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 26px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #34547A;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 41px;
+  padding-right: 41px;
+  transition: all 150ms ease-in-out;
+}
+.slider__item-link:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+.slider ul.slick-dots {
+  position: absolute;
+  z-index: 100;
+  left: 0px;
+  bottom: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+@media screen and (max-width: 768px) {
+  .slider ul.slick-dots {
+    left: -8px;
+    right: 8px;
+  }
+}
+.slider ul.slick-dots li {
+  display: block;
+  padding-left: 14px;
+  padding-right: 4px;
+}
+.slider ul.slick-dots li button {
+  display: block;
+  max-width: 8px;
+  max-height: 8px;
+  cursor: pointer;
+  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  text-indent: -500px;
+  border-radius: 50%;
+}
+.slider ul.slick-dots li.slick-active button {
+  background-color: #34547A;
+  max-width: 14px;
+  max-height: 14px;
+  border: #34547A;
+}
+.slider .slick-dots li button:before {
+  content: "" !important;
+  height: 100% !important;
+  width: 100% !important;
+}/*# sourceMappingURL=slider.css.map */

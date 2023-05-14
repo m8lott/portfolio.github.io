@@ -1,0 +1,35 @@
+.aboutme {
+  // .aboutme__wrapper
+  &__wrapper {
+    padding-top: 200px;
+  }
+  // .aboutme__content
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  // .aboutme__content-title
+  &__content-title {
+     font-family: 'Roboto';
+font-weight: 500;
+font-size: 32px;
+line-height: 38px;
+text-align: center;
+color: #000000;
+  }
+  // .aboutme__content-text
+  &__content-text {
+    font-family: 'Roboto';
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+color: #727272;
+max-width: 540px;
+padding-top: 50px;
+  }
+  }
+  .container {
+  }
+  

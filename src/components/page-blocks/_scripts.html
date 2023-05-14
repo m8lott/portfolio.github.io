@@ -1,2 +1,65 @@
 <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
+<script src="js/jquery-3.6.4.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script>
+  let links = document.querySelectorAll('.header__nav-menu-link');
+  let burger = document.querySelector('.header__burger');
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active');
+  document.querySelector('.header__nav').classList.toggle('open');
+  
+  for (let link of links) {
+    link.addEventListener('click', () => {
+    if (burger.classList.contains('active')) {
+      burger.classList.remove('active');
+      document.body.style.overflow = 'visible';
+    }
+    if (document.querySelector('.header__nav').classList.contains('open')) {
+      document.querySelector('.header__nav').classList.remove('open');
+    }
+  })
+  }
+  if (burger.classList.contains('active')) {
+  document.body.style.overflow = 'hidden';
+}
+})
+
+</script>
+<script>
+  $(function() {
+  $('.slider__wrapper').slick({
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots:true,
+  })
+});
+</script>
+<script>
+  const btnUp = {
+  el: document.querySelector('.btn-up'),
+  show() {
+        this.el.classList.remove('btn-up_hide');
+  },
+  hide() {
+    this.el.classList.add('btn-up_hide');
+  },
+  addEventListener() {
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY || document.documentElement.scrollTop;
+      scrollY > 400 ? this.show() : this.hide();
+    });
+    document.querySelector('.btn-up').onclick = () => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }
+  }
+}
+btnUp.addEventListener();
+</script>

@@ -1,0 +1,27 @@
+body {
+  overflow-x: hidden;
+}
+
+.footer__wrappper {
+  margin-top: 150px;
+  margin-bottom: 100px;
+  padding-top: 50px;
+  border-top: 1px solid #E5E5E5;
+  padding-left: 50px;
+}
+.footer__title {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
+}
+.footer__links {
+  padding-top: 20px;
+}
+.footer__links-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding-left: 0;
+}/*# sourceMappingURL=footer.css.map */
