@@ -30,6 +30,13 @@ color: #000000;
   background-repeat: no-repeat;
   background-position: center;
   }
+  &__item-wrapper-3 {
+    width: 100%;
+    height: 540px;
+  background-image: url('../img/timer.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  }
   // .slider__item-content
   &__item-content {
     display: flex;
