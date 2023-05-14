@@ -418,17 +418,17 @@ btnUp.addEventListener();
 <script src="js/jquery-3.6.4.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script>
-  let links = document.querySelectorAll('.header__nav-menu-link');
-  let burger = document.querySelector('.header__burger');
+  let linkss = document.querySelectorAll('.header__nav-menu-link');
+  let burgers = document.querySelector('.header__burger');
 
 burger.addEventListener('click', () => {
   burger.classList.toggle('active');
   document.querySelector('.header__nav').classList.toggle('open');
   
-  for (let link of links) {
+  for (let link of linkss) {
     link.addEventListener('click', () => {
-    if (burger.classList.contains('active')) {
-      burger.classList.remove('active');
+    if (burgers.classList.contains('active')) {
+      burgers.classList.remove('active');
       document.body.style.overflow = 'visible';
     }
     if (document.querySelector('.header__nav').classList.contains('open')) {
@@ -436,7 +436,7 @@ burger.addEventListener('click', () => {
     }
   })
   }
-  if (burger.classList.contains('active')) {
+  if (burgers.classList.contains('active')) {
   document.body.style.overflow = 'hidden';
 }
 })
@@ -454,7 +454,7 @@ burger.addEventListener('click', () => {
 });
 </script>
 <script>
-  const btnUp = {
+  const btnUpp = {
   el: document.querySelector('.btn-up'),
   show() {
         this.el.classList.remove('btn-up_hide');
@@ -476,7 +476,7 @@ burger.addEventListener('click', () => {
     }
   }
 }
-btnUp.addEventListener();
+btnUpp.addEventListener();
 </script>
 
 </body>
