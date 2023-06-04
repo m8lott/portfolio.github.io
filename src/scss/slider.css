@@ -28,9 +28,10 @@
 .slider__item-wrapper-3 {
   width: 100%;
   height: 540px;
-  background-image: url("../img/timer.png");
+  background-image: url("../img/todo.png");
   background-repeat: no-repeat;
   background-position: center;
+  overflow: visible;
 }
 .slider__item-content {
   display: flex;
